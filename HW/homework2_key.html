@@ -623,8 +623,8 @@ sum(cars$Color == &quot;BLUE&quot; | cars$Color == &quot;RED&quot; )</code></pre
 <pre class="r"><code>sum(cars$Color %in% c(&quot;BLUE&quot;,&quot;RED&quot;))</code></pre>
 <pre><code>## [1] 16603</code></pre>
 <pre class="r"><code># d.    Are made by Chrysler or Nissan and are white or silver? 
-sum((cars$Make == &quot;CHRYSLER&quot; | cars$Make==&quot;NISSAN&quot;) &amp; (cars$Color == &quot;WHITE&quot; | cars$Color == &quot;WHITE&quot; ))</code></pre>
-<pre><code>## [1] 1748</code></pre>
+sum((cars$Make == &quot;CHRYSLER&quot; | cars$Make==&quot;NISSAN&quot;) &amp; (cars$Color == &quot;WHITE&quot; | cars$Color == &quot;SILVER&quot; ))</code></pre>
+<pre><code>## [1] 4335</code></pre>
 <pre class="r"><code>sum(cars$Make %in% c(&quot;CHRYSLER&quot;,&quot;NISSAN&quot;) &amp; 
     cars$Color %in% c(&quot;WHITE&quot;,&quot;SILVER&quot; ))</code></pre>
 <pre><code>## [1] 4335</code></pre>
